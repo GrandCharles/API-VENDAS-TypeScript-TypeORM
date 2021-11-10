@@ -1,0 +1,69 @@
+API RESTFULL NODE-EXPRESS-TYPESCRIPT-TYPEORM-REDIS-DOCKER
+===================================================================
+npm init -y
+-----------------------------------------------------------------------
+** TypeScript
+npm install typescript ts-node-dev @types/node tsconfig-paths -D
+ou
+yarn add typescript ts-node-dev @types/node tsconfig-paths -D
+-----------------------------------------------------------------------
+** Criar arquivo "tsconfig.json" 
+npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+-----------------------------------------------------------------------
+** Compilar o código
+npx tsc
+-----------------------------------------------------------------------
+** Estartar o src/shared/http/server.ts
+
+"scripts": {
+   "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts"
+}
+npm start
+-----------------------------------------------------------------------
+** Express
+npm install express
+npm install express-async-errors --save
+-----------------------------------------------------------------------
+** Cors
+npm install cors
+-----------------------------------------------------------------------
+**express-async-error
+npm install express-async-error
+-----------------------------------------------------------------------
+http://localhost:3333
+-----------------------------------------------------------------------
+** TypeORM
+npm install typeorm
+npm install reflect-metadata
+-----------------------------------------------------------------------
+** node-postgres
+npm install pg
+-------------------------------------------------------------------
+** Oracle
+npm install oracledb
+-------------------------------------------------------------------
+** Celebrate - Validação de dados via rotas
+npm install celebrate
+-------------------------------------------------------------------------
+** Datas
+npm install date-fns
+-------------------------------------------------------------------------
+** Criptografia de Senhas - Outra opção - npm install crypto-js - npm install cryptojs
+*npm install bcryptjs
+*npm install --save @types/bcryptjs
+
+npm install crypto-js --save
+npm install @types/crypto-js --save
+-------------------------------------------------------------------------
+** autenticação JWT
+npm install jsonwebtoken --save
+npm install @types/jsonwebtoken --save
+clsCRIPT()
+Encrypt(string)
+Decrypt(string)
+MD5Hash(string)
+-------------------------------------------------------------------------
+** Multer - Upload de arquivos
+npm install multer --save
+
+
